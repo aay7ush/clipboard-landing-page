@@ -1,0 +1,86 @@
+@use "../utils/" as u;
+
+.footer {
+  display: grid;
+  gap: 3rem;
+  padding-block: 3.5rem;
+  background-color: var(--clr-grayish-blue-200);
+  text-align: center;
+
+  &__nav {
+    display: grid;
+    gap: 2.7rem;
+
+    @include u.breakpoint(lg) {
+      display: flex;
+      gap: 5rem;
+    }
+
+    &-logo {
+      max-width: 50px;
+      margin-inline: auto;
+
+      @include u.breakpoint(lg) {
+        margin-inline: 0;
+      }
+    }
+
+    &-links {
+      display: grid;
+      gap: 1.5rem;
+
+      li {
+        display: grid;
+        gap: 1.5rem;
+
+        a:any-link {
+          color: var(--clr-grayish-blue-600);
+          transition: 0.3s ease;
+
+          &:hover {
+            color: var(--clr-cyan);
+          }
+        }
+        @include u.breakpoint(lg) {
+          font-size: 1rem;
+          gap: 1rem;
+        }
+      }
+
+      @include u.breakpoint(lg) {
+        display: flex;
+        text-align: start;
+        gap: 5rem;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+    i {
+      font-size: 1.7rem;
+      color: var(--clr-grayish-blue-600);
+      transition: 0.3s ease;
+
+      &:hover {
+        color: var(--clr-cyan);
+        cursor: pointer;
+      }
+
+      @include u.breakpoint(lg) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @include u.breakpoint(lg) {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7vw;
+  }
+}

@@ -1,0 +1,14 @@
+@use "../utils/" as u;
+
+.devices {
+  margin-block: 8rem;
+
+  .container {
+    padding-inline: 1.5rem;
+  }
+
+  &__img {
+    max-width: 900px;
+    margin: 4rem auto 0;
+  }
+}

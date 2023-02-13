@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  // Colors
+  --clr-cyan: hsl(171, 66%, 44%);
+  --clr-blue: hsl(233, 100%, 69%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grayish-blue-200: hsl(220, 18%, 97%);
+  --clr-grayish-blue-400: hsl(201, 11%, 66%);
+  --clr-grayish-blue-600: hsl(210, 10%, 33%);
+  --clr-cyan-btn-border: hsl(169, 51%, 39%);
+  --clr-cyan-btn-shadow: hsla(169, 83%, 55%, 0.656);
+  --clr-cyan-btn-hover: hsl(171, 52%, 58%);
+  --clr-blue-btn-border: hsl(232, 44%, 54%);
+  --clr-blue-btn-shadow: hsla(0, 0%, 76%, 0.79);
+  --clr-blue-btn-hover: hsl(232, 100%, 76%);
+
+  // Fonts
+  --ff: "Bai Jamjuree", sans-serif;
+
+  --fs-base: 1.125rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 1.9rem;
+  --fs-3xl: 2.3rem;
+
+  --fw-normal: 400;
+  --fw-bold: 600;
+}

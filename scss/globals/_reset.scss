@@ -1,0 +1,79 @@
+@use "../utils/" as u;
+
+// Reset
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+a:any-link {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  font-family: var(--ff);
+  font-size: var(--fs-base);
+  color: var(--clr-grayish-blue-400);
+  min-height: 100vh;
+
+  background-image: url(../../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+
+  @include u.breakpoint(lg) {
+    background-image: url(../../images/bg-header-desktop.png);
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-grayish-blue-600);
+}
+
+h1 {
+  font-size: var(--fs-3xl);
+}
+
+h2 {
+  font-size: var(--fs-2xl);
+}
+
+h3 {
+  font-size: var(--fs-xl);
+}
+
+p {
+  line-height: 1.8rem;
+}

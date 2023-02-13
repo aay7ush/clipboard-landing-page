@@ -1,0 +1,19 @@
+@use "../utils/" as u;
+
+.cta {
+  display: grid;
+  gap: 1.5rem;
+  padding-inline: 2.5rem;
+  margin-block: 3rem;
+
+  &__download {
+    display: grid;
+    gap: 1.5rem;
+    margin-block: 2rem 6rem;
+
+    @include u.breakpoint(lg) {
+      display: flex;
+      margin-inline: auto;
+    }
+  }
+}

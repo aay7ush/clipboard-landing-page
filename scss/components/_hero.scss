@@ -1,0 +1,28 @@
+@use "../utils/" as u;
+
+.hero {
+  display: grid;
+  gap: 3.5rem;
+  margin-block: 8rem;
+  padding-inline: 1.5rem;
+
+  &__logo {
+    max-width: 150px;
+    margin-inline: auto;
+  }
+
+  &__content {
+    display: grid;
+    gap: 1rem;
+  }
+
+  &__download {
+    display: grid;
+    gap: 1.5rem;
+
+    @include u.breakpoint(lg) {
+      display: flex;
+      margin-inline: auto;
+    }
+  }
+}

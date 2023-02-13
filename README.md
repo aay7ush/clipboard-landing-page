@@ -8,7 +8,7 @@ Building realistic projects to improve my front-end skills.
 
 ### Links
 
-- Live Site URL: [Clipboard landing page](https://1ntro-section-dropdown.netlify.app/)
+- Live Site URL: [Clipboard landing page](https://clipboard-land1ng-page.netlify.app/)
 
 ## Built with
 
